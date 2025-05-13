@@ -22,13 +22,9 @@ useHead({
             <hr class="my-4">
 
             <Button class=" w-full">
-              <VsxIcon iconName="LoginCurve" :size="24" type="linear" />
-              Sign in
+              Send Email
             </Button>
-            <Button class="mt-3 w-full" variant="outline">
-              <VsxIcon iconName="MessageSearch" :size="24" type="linear" />
-              Contact Support
-            </Button>
+           
           </form>
         </div>
       </div>
