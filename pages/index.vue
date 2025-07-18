@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-20">
+  <div class="container mt-40 pb-10">
     <h1 class="text-4xl lg:text-6xl text-center font-semibold max-w-4xl mx-auto">The website builder you're looking for</h1>
     <p class="text-center max-w-3xl mx-auto mt-8 text-gray-500 text-lg">Simple is a modern website builder powered by AI that changes how companies create user interfaces together.</p>
     <div class="flex justify-center gap-4 mt-8">

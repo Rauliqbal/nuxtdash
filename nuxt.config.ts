@@ -2,6 +2,11 @@ import tailwindcss from "@tailwindcss/vite"
 
 export default defineNuxtConfig({
   compatibilityDate: "2024-12-30",
+  app:{
+    head : {
+      title: 'NuxtDash - Template Dashboard'
+    }
+  },
   devtools: { enabled: true },
   css: ["~/assets/css/tailwind.css"],
   vite: {
