@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #eff1f5;
+  --color-foreground: oklch(0.145 0 0);
+  --color-primary: #546fff;
+  --font-poppins: "Poppins", "sans-serif";
+}
+
+@layer base {
+  .container {
+    @apply mx-auto !max-w-[1120px] px-4 lg:px-0;
+  }
+  body {
+    @apply bg-background text-foreground font-poppins;
+  }
+}
+@layer components {
+  .paragraph {
+    @apply text-gray-500 dark:text-gray-200 leading-relaxed tracking-wide;
+  }
+}
