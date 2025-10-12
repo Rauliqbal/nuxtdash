@@ -1,12 +1,8 @@
-<script setup lang="ts">
-import MainNavbar from '~/component/MainNavbar.vue';
-
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div>
-    <MainNavbar/>
+    <main-navbar />
     <main>
       <slot />
     </main>
