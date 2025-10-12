@@ -1,7 +1,4 @@
 <script setup>
-import Button from "~/component/ui/Button.vue";
-import Input from "~/component/ui/Input.vue";
-
 useHead({
   title: "Login",
 });
@@ -13,59 +10,65 @@ useHead({
       <div class="mx-auto max-w-sm">
         <h4 class="text-4xl font-bold">Sign In</h4>
         <p class="paragraph mt-4">Start managing your website</p>
-        <form class="mt-8"  method="post">
+        <form class="mt-8" method="post">
           <!-- Input Email -->
           <div>
             <label>
               <span class="text-sm font-medium text-gray-700">Email</span>
-              <Input type="text" placeholder="Enter your emaill adress" />
+              <UiInput type="text" placeholder="Enter your emaill adress" />
             </label>
           </div>
           <!-- Input Password -->
           <div class="mt-4">
             <label>
               <span class="text-sm font-medium text-gray-700">Password</span>
-              <Input type="text" placeholder="Enter your password" />
+              <UiInput type="text" placeholder="Enter your password" />
             </label>
           </div>
 
           <!-- Forgot Password -->
-          <NuxtLink
-            to="/reset-password"
-            class="text-gray-400 underline hover:text-gray-600 transition-all text-sm mt-4"
-            >Forgot password</NuxtLink
-          >
+          <div class="mt-4">
+            <NuxtLink
+              to="/reset-password"
+              class="text-gray-400 underline hover:text-gray-600 transition-all text-sm"
+              >Forgot password</NuxtLink
+            >
+          </div>
 
-         <div class="mt-4">
+          <div class="mt-4 flex gap-4 flex-col">
             <!-- Button Submit -->
-           <Button variant="primary" class="w-full">
-            <template #icon>
-              <VsxIcon iconName="LoginCurve" :size="24" type="linear" />
-            </template>
-            Sign in
-          </Button>
-          <!-- Button Customer Support -->
-          <Button class="mt-3 w-full" to="#" variant="outline">
-            <VsxIcon iconName="MessageSearch" :size="24" type="linear" />
-            Contact Support
-          </Button>
-         </div>
+            <UiButton variant="primary">
+              <template #icon>
+                <VsxIcon iconName="LoginCurve" :size="24" type="linear" />
+              </template>
+              Sign in
+            </UiButton>
+            <!-- Button Customer Support -->
+            <UiButton to="#" variant="outline">
+              <VsxIcon iconName="MessageSearch" :size="24" type="linear" />
+              Contact Support
+            </UiButton>
+          </div>
           <div class="my-6 bg-gray-300 w-full h-[1px]"></div>
 
           <!-- Login Google -->
-            <Button class="w-full" variant="outline">
-            <VsxIcon iconName="Google" :size="24" type="linear" />
+          <UiButton class="w-full" variant="outline">
+            <img class="w-6" src="~/assets/images/ic-google.svg" />
             Login with Google
-          </Button>
+          </UiButton>
         </form>
       </div>
     </div>
-    <div class="h-screen overflow-hidden rounded-2xl">
-      <img
-        class="h-full object-cover"
-        src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt=""
-      />
+    <div class="h-screen p-4">
+      <div
+        class="h-full bg-gradient-to-br from-blue-500 to-blue-400 rounded-2xl overflow-hidden p-10"
+      >
+        <img
+          class="h-full object-cover"
+          src="~/assets/images/ilus-login.svg"
+          alt="Ilustration Login"
+        />
+      </div>
     </div>
   </div>
 </template>

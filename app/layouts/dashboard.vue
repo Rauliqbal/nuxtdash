@@ -1,6 +1,9 @@
+<script setup lang="ts"></script>
+
 <template>
   <div>
     <!-- Sidebar -->
+    test
     <!-- Content -->
     <div class="flex flex-col flex-1">
       <main>

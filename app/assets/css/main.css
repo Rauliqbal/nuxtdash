@@ -17,6 +17,6 @@
 }
 @layer components {
   .paragraph {
-    @apply text-gray-500 dark:text-gray-200 leading-relaxed tracking-wide;
+    @apply text-gray-500 leading-relaxed tracking-wide;
   }
 }
