@@ -1,75 +1,119 @@
-# Nuxt Minimal Starter
+<div align="center">
+  <img src="./nuxt-logo.png" width="140" alt="NuxtDash"/>
+</div>
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+<h1 align="center" style="font-weight: bold;">NuxtDash - Dashboard template 💻</h1>
 
-## Setup
+<p align="center">
+<a href="#tech">Technologies</a> |
+<a href="#started">Getting Started</a> |
+<a href="#colab">Collaborators</a> |
+<a href="#contribute">Contribute</a>
+</p>
 
-Make sure to install dependencies:
+<p align="center">⚡ Build your timeless Dashboard with Nuxt V4 and Tailwind</p>
+
+<!-- <p align="center">
+<a href="https://super-portfolioo.pages.dev/">📱 Visit this Project</a>
+</p> -->
+
+<h2 id="tech">📸 Screenshoot</h2>
+
+| Landing |
+|:-:|
+|<img src="./screenshot/landing.png" alt="NuxtDash Landing" align="center">|
+
+| Sign In |
+|:-:|
+|<img src="./screenshot/login.png" alt="NuxtDash Login" align="center">|
+
+| Sign Up |
+|:-:|
+|<img src="./screenshot/register.png" alt="NuxtDash register" align="center">|
+
+<h2 id="tech">💻 Technologies</h2>
+
+- Nuxt 4
+- Tailwind CSS v4
+- Typescript
+- Iconsax
+- Nuxt Google Font
+
+<h2 id="started">🚀 Getting started</h2>
+
+Here you describe how to run your project locally
+
+<h3>Prerequisites</h3>
+
+Here you list all prerequisites necessary for running your project. For example:
+
+- [Node JS](https://nodejs.org/)
+- [PNPM](https://pnpm.io/installation)
+
+<h3>Cloning</h3>
+
+How to clone your project
 
 ```bash
-# npm
+git clone https://github.com/Rauliqbal/nuxtdash.git --branch main
+```
+
+<h3>Starting</h3>
+
+How to start your project
+
+```bash
+cd nuxtdash
+
+# Install Dependencies
+pnpm install
+# or
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
+# Running on Development
 pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+# or
+npm run dev
 ```
+Open on your browser http://localhost:3000
 
-## Production
+<h2 id="colab">🤝 Collaborators</h2>
 
-Build the application for production:
+<p>Special thank you for all people that contributed for this project.</p>
+<table>
+<tr>
 
-```bash
-# npm
-npm run build
+<td align="center">
+<a href="https://github.com/Rauliqbal">
+<img src="https://avatars.githubusercontent.com/u/89615372?v=4" width="100px;" alt="Rauliqbal Profile Picture"/><br>
+<sub>
+<b>Rauliqbal</b>
+</sub>
+</a>
+</td>
+<!-- <td align="center">
+<a href="https://github.com/kkkfasya">
+<img src="https://avatars.githubusercontent.com/u/69980010?v=4" width="100px;" alt="Rauliqbal Profile Picture"/><br>
+<sub>
+<b>kkkfasya</b>
+</sub>
+</a>
+</td> -->
 
-# pnpm
-pnpm build
+</tr>
+</table>
 
-# yarn
-yarn build
+<h2 id="contribute">📫 Contribute</h2>
 
-# bun
-bun run build
-```
+Here you will explain how other developers can contribute to your project. For example, explaining how can create their branches, which patterns to follow and how to open an pull request
 
-Locally preview production build:
+1. `git clone https://github.com/Rauliqbal/nuxtdash.git`
+2. `git checkout -b feature/NAME`
+3. Follow commit patterns
+4. Open a Pull Request explaining the problem solved or feature made, if exists, append screenshot of visual modifications and wait for the review!
 
-```bash
-# npm
-npm run preview
+<h3>Documentations that might help</h3>
 
-# pnpm
-pnpm preview
+[📝 How to create a Pull Request](https://www.atlassian.com/br/git/tutorials/making-a-pull-request)
 
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+[💾 Commit pattern](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)

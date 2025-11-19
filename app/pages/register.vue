@@ -2,6 +2,9 @@
 useHead({
   title: "Register",
 });
+definePageMeta({
+  layout: false
+})
 </script>
 
 <template>
@@ -9,9 +12,9 @@ useHead({
     <div class="px-4">
       <div class="mx-auto max-w-sm">
         <h4 class="text-4xl font-bold">Sign Up</h4>
-        <p class="paragraph mt-4">Get started with us</p>
+        <p class="paragraph mt-2">Get started with us</p>
 
-        <form class="mt-8" action="" method="post">
+        <form class="mt-6" action="" method="post">
           <!-- Input Name -->
           <div>
             <label>
@@ -49,31 +52,20 @@ useHead({
               </template>
               Sign up
             </UiButton>
-            <!-- Button Customer Support -->
-            <UiButton to="#" variant="outline">
-              <VsxIcon iconName="MessageSearch" :size="24" type="linear" />
-              Contact Support
+            <div class="my-1 bg-gray-300 w-full h-[1px]"></div>
+            <!-- Login Google -->
+            <UiButton class="w-full" variant="outline">
+              <img class="w-6" src="~/assets/images/ic-google.svg" />
+              Continue with Google
             </UiButton>
           </div>
-          <div class="my-6 bg-gray-300 w-full h-[1px]"></div>
 
-          <!-- Login Google -->
-          <UiButton class="w-full" variant="outline">
-            <img class="w-6" src="~/assets/images/ic-google.svg" />
-            Login with Google
-          </UiButton>
         </form>
       </div>
     </div>
     <div class="h-screen p-4">
-      <div
-        class="h-full bg-gradient-to-br from-blue-500 to-blue-400 rounded-2xl overflow-hidden p-10"
-      >
-        <img
-          class="h-full object-cover"
-          src="~/assets/images/ilus-register.svg"
-          alt="Ilustration Login"
-        />
+      <div class="h-full bg-gradient-to-br from-blue-500 to-blue-400 rounded-2xl overflow-hidden p-10">
+        <img class="h-full object-cover" src="~/assets/images/ilus-register.svg" alt="Ilustration Login" />
       </div>
     </div>
   </div>
