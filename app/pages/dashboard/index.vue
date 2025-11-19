@@ -2,6 +2,9 @@
 definePageMeta({
   layout: "dashboard",
 });
+useSeoMeta({
+  title: "Overview - NuxtDash",
+});
 </script>
 
 <template>

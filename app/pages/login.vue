@@ -2,6 +2,9 @@
 useHead({
   title: "Login",
 });
+definePageMeta({
+  layout: false
+})
 </script>
 
 <template>
@@ -9,8 +12,8 @@ useHead({
     <div class="px-4">
       <div class="mx-auto max-w-sm">
         <h4 class="text-4xl font-bold">Sign In</h4>
-        <p class="paragraph mt-4">Start managing your website</p>
-        <form class="mt-8" method="post">
+        <p class="paragraph mt-2">Start managing your website</p>
+        <form class="mt-6" method="post">
           <!-- Input Email -->
           <div>
             <label>
@@ -28,11 +31,8 @@ useHead({
 
           <!-- Forgot Password -->
           <div class="mt-4">
-            <NuxtLink
-              to="/reset-password"
-              class="text-gray-400 underline hover:text-gray-600 transition-all text-sm"
-              >Forgot password</NuxtLink
-            >
+            <NuxtLink to="#" class="text-gray-400 underline hover:text-gray-600 transition-all text-sm">
+              Forgot password</NuxtLink>
           </div>
 
           <div class="mt-4 flex gap-4 flex-col">
@@ -48,26 +48,20 @@ useHead({
               <VsxIcon iconName="MessageSearch" :size="24" type="linear" />
               Contact Support
             </UiButton>
+            <div class="my-1 bg-gray-300 w-full h-[1px]"></div>
+            <!-- Login Google -->
+            <UiButton variant="outline">
+              <img class="w-6" src="~/assets/images/ic-google.svg" />
+              Login with Google
+            </UiButton>
           </div>
-          <div class="my-6 bg-gray-300 w-full h-[1px]"></div>
 
-          <!-- Login Google -->
-          <UiButton class="w-full" variant="outline">
-            <img class="w-6" src="~/assets/images/ic-google.svg" />
-            Login with Google
-          </UiButton>
         </form>
       </div>
     </div>
     <div class="h-screen p-4">
-      <div
-        class="h-full bg-gradient-to-br from-blue-500 to-blue-400 rounded-2xl overflow-hidden p-10"
-      >
-        <img
-          class="h-full object-cover"
-          src="~/assets/images/ilus-login.svg"
-          alt="Ilustration Login"
-        />
+      <div class="h-full bg-gradient-to-br from-blue-500 to-blue-400 rounded-2xl overflow-hidden p-10">
+        <img class="h-full object-cover" src="~/assets/images/ilus-login.svg" alt="Ilustration Login" />
       </div>
     </div>
   </div>
