@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", href: "/favicon.ico" }],
     },
   },
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   css: ["~/assets/css/main.css"],
   vite: { plugins: [tailwindcss()] },
   modules: ["@nuxtjs/google-fonts"],
