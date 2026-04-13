@@ -3,19 +3,19 @@ const menus = [
   {
     name: "overview",
     menu: [
-      { title: "Home", link: "/dashboard", icon: "Home" },
-      { title: "Analytics", link: "/dashboard/analytics", icon: "ChartSquare" },
-      { title: "Sales", link: "/dashboard/sales", icon: "DollarSquare" },
+      { title: "Home", link: "/", icon: "Home" },
+      { title: "Analytics", link: "/analytics", icon: "ChartSquare" },
+      { title: "Profile", link: "/profile", icon: "DollarSquare" },
     ],
   },
   {
     name: "settings",
     menu: [
-      { title: "Profile", link: "/dashboard/profile", icon: "User" },
-      { title: "Security", link: "/dashboard/security", icon: "Shield" },
+      { title: "Profile", link: "/profile", icon: "User" },
+      { title: "Security", link: "/security", icon: "Shield" },
       {
         title: "Notifications",
-        link: "/dashboard/notifications",
+        link: "/notifications",
         icon: "Notification",
       },
     ],
